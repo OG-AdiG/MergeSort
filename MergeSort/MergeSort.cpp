@@ -1,7 +1,15 @@
-﻿#include <iostream>
+﻿#include "MergeSort.h"
 
-int main()
-{
-    std::cout << "Hello World!\n";
+void MergeSort::sort() {
+
 }
+
+void MergeSort::mergesort() {
+
+}
+
+void MergeSort::merge() {
+
+}
+
 

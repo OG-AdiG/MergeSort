@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Adrian\\Desktop\\MergeSort\\MergeSort\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5A125AF8-6A17-4248-8829-5E4589FA378B}|MergeSort.vcxproj|C:\\Users\\Adrian\\Desktop\\MergeSort\\MergeSort\\MergeSort.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5A125AF8-6A17-4248-8829-5E4589FA378B}|MergeSort.vcxproj|solutionrelative:MergeSort.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MergeSort.cpp",
+              "DocumentMoniker": "C:\\Users\\Adrian\\Desktop\\MergeSort\\MergeSort\\MergeSort.cpp",
+              "RelativeDocumentMoniker": "MergeSort.cpp",
+              "ToolTip": "C:\\Users\\Adrian\\Desktop\\MergeSort\\MergeSort\\MergeSort.cpp",
+              "RelativeToolTip": "MergeSort.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-14T01:07:51.143Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

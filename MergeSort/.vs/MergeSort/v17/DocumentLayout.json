@@ -5,6 +5,18 @@
     {
       "AbsoluteMoniker": "D:0:0:{5A125AF8-6A17-4248-8829-5E4589FA378B}|MergeSort.vcxproj|C:\\Users\\Adrian\\Desktop\\MergeSort\\MergeSort\\MergeSort.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{5A125AF8-6A17-4248-8829-5E4589FA378B}|MergeSort.vcxproj|solutionrelative:MergeSort.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A125AF8-6A17-4248-8829-5E4589FA378B}|MergeSort.vcxproj|C:\\Users\\Adrian\\Desktop\\MergeSort\\MergeSort\\MergeSort.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5A125AF8-6A17-4248-8829-5E4589FA378B}|MergeSort.vcxproj|solutionrelative:MergeSort.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A125AF8-6A17-4248-8829-5E4589FA378B}|MergeSort.vcxproj|C:\\Users\\Adrian\\Desktop\\MergeSort\\MergeSort\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5A125AF8-6A17-4248-8829-5E4589FA378B}|MergeSort.vcxproj|solutionrelative:Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A125AF8-6A17-4248-8829-5E4589FA378B}|MergeSort.vcxproj|C:\\Users\\Adrian\\Desktop\\MergeSort\\MergeSort\\Test.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5A125AF8-6A17-4248-8829-5E4589FA378B}|MergeSort.vcxproj|solutionrelative:Test.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +26,47 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Test.cpp",
+              "DocumentMoniker": "C:\\Users\\Adrian\\Desktop\\MergeSort\\MergeSort\\Test.cpp",
+              "RelativeDocumentMoniker": "Test.cpp",
+              "ToolTip": "C:\\Users\\Adrian\\Desktop\\MergeSort\\MergeSort\\Test.cpp",
+              "RelativeToolTip": "Test.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-14T01:17:23.551Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Main.cpp",
+              "DocumentMoniker": "C:\\Users\\Adrian\\Desktop\\MergeSort\\MergeSort\\Main.cpp",
+              "RelativeDocumentMoniker": "Main.cpp",
+              "ToolTip": "C:\\Users\\Adrian\\Desktop\\MergeSort\\MergeSort\\Main.cpp",
+              "RelativeToolTip": "Main.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-14T01:17:02.556Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MergeSort.h",
+              "DocumentMoniker": "C:\\Users\\Adrian\\Desktop\\MergeSort\\MergeSort\\MergeSort.h",
+              "RelativeDocumentMoniker": "MergeSort.h",
+              "ToolTip": "C:\\Users\\Adrian\\Desktop\\MergeSort\\MergeSort\\MergeSort.h",
+              "RelativeToolTip": "MergeSort.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-11-14T01:16:43.323Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -24,7 +75,7 @@
               "RelativeDocumentMoniker": "MergeSort.cpp",
               "ToolTip": "C:\\Users\\Adrian\\Desktop\\MergeSort\\MergeSort\\MergeSort.cpp",
               "RelativeToolTip": "MergeSort.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-14T01:07:51.143Z",
               "EditorCaption": ""
