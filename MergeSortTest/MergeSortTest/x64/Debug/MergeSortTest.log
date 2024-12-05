@@ -1,0 +1,3 @@
+﻿  pch.cpp
+  test.cpp
+C:\Users\Adrian\Desktop\MergeSort\MergeSortTest\test.cpp(49,1): error C1010: Nieoczekiwany koniec pliku podczas wyszukiwania prekompilowanego pliku nagłówkowego. Czy zapomniano dodać „#include "pch.h"” do źródła?
