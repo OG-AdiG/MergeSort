@@ -20,7 +20,42 @@ void MergeSort::Divide(std::vector<int>& tab, int l, int r) {
 
 }
 
-void MergeSort::merge() {
+void MergeSort::Merge(std::vector<int>&tab, int l, int mid, int r) {
+
+    std::vector<int> left(tab.begin() + l, tab.begin() + mid + 1);
+    std::vector<int> right(tab.begin() + mid + 1, tab.begin() + r + 1);
+
+     int i = 0;
+     int j = 0;
+     int k = l;
+
+     while (i < left.size() && j < right.size()) {
+
+         if (left[i] <= right[j]) {
+
+             tab[k++] = left[i++];
+
+            }
+
+         else {
+
+             tab[k++] = right[j++];
+
+            }
+
+        }
+
+     while (i < left.size()) {
+
+         tab[k++] = left[i++];
+
+        }
+
+     while (j < right.size()) {
+
+         tab[k++] = right[j++];
+
+        }
 
 }
 
