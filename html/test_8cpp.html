@@ -1,0 +1,414 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Merge Sort: Dokumentacja pliku MergeSortTest/test.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Merge Sort<span id="projectnumber">&#160;3</span>
+   </div>
+   <div id="projectbrief">Impelmentacja algorytmu sortowania poprzez scalanie</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano za pomocą Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Wczytywanie...</div>
+<div class="SRStatus" id="Searching">Szukanie...</div>
+<div class="SRStatus" id="NoMatches">Brak dopasowań</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_4a3af9a08ca3af7df530c3240deddde1.html">MergeSortTest</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funkcje</a>  </div>
+  <div class="headertitle"><div class="title">Dokumentacja pliku test.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="_merge_sort_8cpp_source.html">C:/Users/Adrian/Desktop/MergeSort/MergeSort/MergeSort.cpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_merge_sort_8h_source.html">C:/Users/Adrian/Desktop/MergeSort/MergeSort/MergeSort.h</a>&quot;</code><br />
+<code>#include &lt;gtest/gtest.h&gt;</code><br />
+</div>
+<p><a href="test_8cpp_source.html">Idź do kodu źródłowego tego pliku.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funkcje</h2></td></tr>
+<tr class="memitem:a7fad1c1138ef9edd01cb840067591823" id="r_a7fad1c1138ef9edd01cb840067591823"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7fad1c1138ef9edd01cb840067591823">TEST</a> (Tests, correct)</td></tr>
+<tr class="separator:a7fad1c1138ef9edd01cb840067591823"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2dbace422924c6e0d871a0a612ba2709" id="r_a2dbace422924c6e0d871a0a612ba2709"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2dbace422924c6e0d871a0a612ba2709">TEST</a> (Tests, reverseOrder)</td></tr>
+<tr class="separator:a2dbace422924c6e0d871a0a612ba2709"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b1d22e8014591ab28f1ab6ba6b119a7" id="r_a3b1d22e8014591ab28f1ab6ba6b119a7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b1d22e8014591ab28f1ab6ba6b119a7">TEST</a> (Tests, randomOrder)</td></tr>
+<tr class="separator:a3b1d22e8014591ab28f1ab6ba6b119a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab574558331b321b5e355b73acfc0fc0c" id="r_ab574558331b321b5e355b73acfc0fc0c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab574558331b321b5e355b73acfc0fc0c">TEST</a> (Tests, onlyNegative)</td></tr>
+<tr class="separator:ab574558331b321b5e355b73acfc0fc0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91c0be7d634f62a4f1f2f95218ad09fd" id="r_a91c0be7d634f62a4f1f2f95218ad09fd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a91c0be7d634f62a4f1f2f95218ad09fd">TEST</a> (Tests, negativeANDpositive)</td></tr>
+<tr class="separator:a91c0be7d634f62a4f1f2f95218ad09fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7e5d69abfbb17d7d2780f107b8745d4" id="r_aa7e5d69abfbb17d7d2780f107b8745d4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa7e5d69abfbb17d7d2780f107b8745d4">TEST</a> (Tests, empty)</td></tr>
+<tr class="separator:aa7e5d69abfbb17d7d2780f107b8745d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5af932b43b7f25587f6a634d05b64e01" id="r_a5af932b43b7f25587f6a634d05b64e01"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5af932b43b7f25587f6a634d05b64e01">TEST</a> (Tests, oneNumber)</td></tr>
+<tr class="separator:a5af932b43b7f25587f6a634d05b64e01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c883a8d9c62906acf816f78a018605c" id="r_a3c883a8d9c62906acf816f78a018605c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3c883a8d9c62906acf816f78a018605c">TEST</a> (Tests, duplicates)</td></tr>
+<tr class="separator:a3c883a8d9c62906acf816f78a018605c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70129b5b505f98e8df490609fac3cbf2" id="r_a70129b5b505f98e8df490609fac3cbf2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a70129b5b505f98e8df490609fac3cbf2">TEST</a> (Tests, negativeDuplicates)</td></tr>
+<tr class="separator:a70129b5b505f98e8df490609fac3cbf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65f1a741301295801a154b1d0e356403" id="r_a65f1a741301295801a154b1d0e356403"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a65f1a741301295801a154b1d0e356403">TEST</a> (Tests, twoNumbers)</td></tr>
+<tr class="separator:a65f1a741301295801a154b1d0e356403"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fcb877af0ceb317494cb0dbf8a59109" id="r_a3fcb877af0ceb317494cb0dbf8a59109"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3fcb877af0ceb317494cb0dbf8a59109">TEST</a> (Tests, overHundred)</td></tr>
+<tr class="separator:a3fcb877af0ceb317494cb0dbf8a59109"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae52570a5f663fd9f53d252a213d9c858" id="r_ae52570a5f663fd9f53d252a213d9c858"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae52570a5f663fd9f53d252a213d9c858">TEST</a> (Tests, allTypesHundred)</td></tr>
+<tr class="separator:ae52570a5f663fd9f53d252a213d9c858"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Dokumentacja funkcji</h2>
+<a id="ae52570a5f663fd9f53d252a213d9c858" name="ae52570a5f663fd9f53d252a213d9c858"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae52570a5f663fd9f53d252a213d9c858">&#9670;&#160;</a></span>TEST() <span class="overload">[1/12]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">Tests</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">allTypesHundred</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="test_8cpp_source.html#l00117">117</a> pliku <a class="el" href="test_8cpp_source.html">test.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a7fad1c1138ef9edd01cb840067591823" name="a7fad1c1138ef9edd01cb840067591823"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fad1c1138ef9edd01cb840067591823">&#9670;&#160;</a></span>TEST() <span class="overload">[2/12]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">Tests</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">correct</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="test_8cpp_source.html#l00005">5</a> pliku <a class="el" href="test_8cpp_source.html">test.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a3c883a8d9c62906acf816f78a018605c" name="a3c883a8d9c62906acf816f78a018605c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c883a8d9c62906acf816f78a018605c">&#9670;&#160;</a></span>TEST() <span class="overload">[3/12]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">Tests</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">duplicates</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="test_8cpp_source.html#l00068">68</a> pliku <a class="el" href="test_8cpp_source.html">test.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa7e5d69abfbb17d7d2780f107b8745d4" name="aa7e5d69abfbb17d7d2780f107b8745d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7e5d69abfbb17d7d2780f107b8745d4">&#9670;&#160;</a></span>TEST() <span class="overload">[4/12]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">Tests</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">empty</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="test_8cpp_source.html#l00050">50</a> pliku <a class="el" href="test_8cpp_source.html">test.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a91c0be7d634f62a4f1f2f95218ad09fd" name="a91c0be7d634f62a4f1f2f95218ad09fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91c0be7d634f62a4f1f2f95218ad09fd">&#9670;&#160;</a></span>TEST() <span class="overload">[5/12]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">Tests</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">negativeANDpositive</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="test_8cpp_source.html#l00041">41</a> pliku <a class="el" href="test_8cpp_source.html">test.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a70129b5b505f98e8df490609fac3cbf2" name="a70129b5b505f98e8df490609fac3cbf2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70129b5b505f98e8df490609fac3cbf2">&#9670;&#160;</a></span>TEST() <span class="overload">[6/12]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">Tests</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">negativeDuplicates</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="test_8cpp_source.html#l00077">77</a> pliku <a class="el" href="test_8cpp_source.html">test.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a5af932b43b7f25587f6a634d05b64e01" name="a5af932b43b7f25587f6a634d05b64e01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5af932b43b7f25587f6a634d05b64e01">&#9670;&#160;</a></span>TEST() <span class="overload">[7/12]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">Tests</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">oneNumber</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="test_8cpp_source.html#l00059">59</a> pliku <a class="el" href="test_8cpp_source.html">test.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab574558331b321b5e355b73acfc0fc0c" name="ab574558331b321b5e355b73acfc0fc0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab574558331b321b5e355b73acfc0fc0c">&#9670;&#160;</a></span>TEST() <span class="overload">[8/12]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">Tests</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">onlyNegative</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="test_8cpp_source.html#l00032">32</a> pliku <a class="el" href="test_8cpp_source.html">test.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a3fcb877af0ceb317494cb0dbf8a59109" name="a3fcb877af0ceb317494cb0dbf8a59109"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fcb877af0ceb317494cb0dbf8a59109">&#9670;&#160;</a></span>TEST() <span class="overload">[9/12]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">Tests</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">overHundred</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="test_8cpp_source.html#l00095">95</a> pliku <a class="el" href="test_8cpp_source.html">test.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a3b1d22e8014591ab28f1ab6ba6b119a7" name="a3b1d22e8014591ab28f1ab6ba6b119a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b1d22e8014591ab28f1ab6ba6b119a7">&#9670;&#160;</a></span>TEST() <span class="overload">[10/12]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">Tests</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">randomOrder</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="test_8cpp_source.html#l00023">23</a> pliku <a class="el" href="test_8cpp_source.html">test.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a2dbace422924c6e0d871a0a612ba2709" name="a2dbace422924c6e0d871a0a612ba2709"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2dbace422924c6e0d871a0a612ba2709">&#9670;&#160;</a></span>TEST() <span class="overload">[11/12]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">Tests</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">reverseOrder</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="test_8cpp_source.html#l00014">14</a> pliku <a class="el" href="test_8cpp_source.html">test.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a65f1a741301295801a154b1d0e356403" name="a65f1a741301295801a154b1d0e356403"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65f1a741301295801a154b1d0e356403">&#9670;&#160;</a></span>TEST() <span class="overload">[12/12]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">Tests</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">twoNumbers</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="test_8cpp_source.html#l00086">86</a> pliku <a class="el" href="test_8cpp_source.html">test.cpp</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano za pomocą&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

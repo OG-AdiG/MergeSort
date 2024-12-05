@@ -1,24 +1,24 @@
 var indexSectionsWithContent =
 {
-  0: "abcdefghilmnprstuvw",
-  1: "abcefghilmnprstuvw",
-  2: "dms",
-  3: "cmp"
+  0: "dmst",
+  1: "m",
+  2: "mt",
+  3: "dmst"
 };
 
 var indexSectionNames =
 {
   0: "all",
   1: "classes",
-  2: "functions",
-  3: "pages"
+  2: "files",
+  3: "functions"
 };
 
 var indexSectionLabels =
 {
-  0: "All",
-  1: "Classes",
-  2: "Functions",
-  3: "Pages"
+  0: "Wszystko",
+  1: "Klasy",
+  2: "Pliki",
+  3: "Funkcje"
 };
 

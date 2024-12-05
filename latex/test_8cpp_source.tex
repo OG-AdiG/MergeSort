@@ -1,0 +1,144 @@
+\doxysection{test.\+cpp}
+\hypertarget{test_8cpp_source}{}\label{test_8cpp_source}\index{MergeSortTest/test.cpp@{MergeSortTest/test.cpp}}
+\mbox{\hyperlink{test_8cpp}{Idź do dokumentacji tego pliku.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00001}00001\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_merge_sort_8cpp}{C:/Users/Adrian/Desktop/MergeSort/MergeSort/MergeSort.cpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00002}00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_merge_sort_8h}{C:/Users/Adrian/Desktop/MergeSort/MergeSort/MergeSort.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00003}00003\ \textcolor{preprocessor}{\#include\ <gtest/gtest.h>}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00004}00004\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00005}\mbox{\hyperlink{test_8cpp_a7fad1c1138ef9edd01cb840067591823}{00005}}\ \mbox{\hyperlink{test_8cpp_a7fad1c1138ef9edd01cb840067591823}{TEST}}(Tests,\ correct)\ \{}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00006}00006\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00007}00007\ \ \ \ \ std::vector<int>\ t\ =\ \{\ 1,\ 2,\ 3,\ 4,\ 5\ \};}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00008}00008\ \ \ \ \ \mbox{\hyperlink{class_merge_sort_aa5217ebb6343779cc239c8d5ebe56ab1}{MergeSort::Sort}}(t);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00009}00009\ \ \ \ \ std::vector<int>\ expected\ =\ \{\ 1,\ 2,\ 3,\ 4,\ 5\ \};}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00010}00010\ \ \ \ \ ASSERT\_EQ(t,\ expected);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00011}00011\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00012}00012\ \}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00013}00013\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00014}\mbox{\hyperlink{test_8cpp_a2dbace422924c6e0d871a0a612ba2709}{00014}}\ \mbox{\hyperlink{test_8cpp_a7fad1c1138ef9edd01cb840067591823}{TEST}}(Tests,\ reverseOrder)\ \{}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00015}00015\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00016}00016\ \ \ \ \ std::vector<int>\ t\ =\ \{\ 10,\ 9,\ 8,\ 7,\ 6\ \};}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00017}00017\ \ \ \ \ \mbox{\hyperlink{class_merge_sort_aa5217ebb6343779cc239c8d5ebe56ab1}{MergeSort::Sort}}(t);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00018}00018\ \ \ \ \ std::vector<int>\ expected\ =\ \{\ 6,\ 7,\ 8,\ 9,\ 10\ \};}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00019}00019\ \ \ \ \ ASSERT\_EQ(t,\ expected);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00020}00020\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00021}00021\ \}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00022}00022\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00023}\mbox{\hyperlink{test_8cpp_a3b1d22e8014591ab28f1ab6ba6b119a7}{00023}}\ \mbox{\hyperlink{test_8cpp_a7fad1c1138ef9edd01cb840067591823}{TEST}}(Tests,\ randomOrder)\ \{}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00024}00024\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00025}00025\ \ \ \ \ std::vector<int>\ t\ =\ \{\ 3,\ 1,\ 4,\ 5,\ 2\ \};}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00026}00026\ \ \ \ \ \mbox{\hyperlink{class_merge_sort_aa5217ebb6343779cc239c8d5ebe56ab1}{MergeSort::Sort}}(t);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00027}00027\ \ \ \ \ std::vector<int>\ expected\ =\ \{\ 1,\ 2,\ 3,\ 4,\ 5\ \};}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00028}00028\ \ \ \ \ ASSERT\_EQ(t,\ expected);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00029}00029\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00030}00030\ \}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00031}00031\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00032}\mbox{\hyperlink{test_8cpp_ab574558331b321b5e355b73acfc0fc0c}{00032}}\ \mbox{\hyperlink{test_8cpp_a7fad1c1138ef9edd01cb840067591823}{TEST}}(Tests,\ onlyNegative)\ \{}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00033}00033\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00034}00034\ \ \ \ \ std::vector<int>\ t\ =\ \{\ -\/12,\ -\/8,\ -\/4,\ -\/16,\ -\/2\ \};}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00035}00035\ \ \ \ \ \mbox{\hyperlink{class_merge_sort_aa5217ebb6343779cc239c8d5ebe56ab1}{MergeSort::Sort}}(t);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00036}00036\ \ \ \ \ std::vector<int>\ expected\ =\ \{\ -\/16,\ -\/12,\ -\/8,\ -\/4,\ -\/2\ \};}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00037}00037\ \ \ \ \ ASSERT\_EQ(t,\ expected);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00038}00038\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00039}00039\ \}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00040}00040\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00041}\mbox{\hyperlink{test_8cpp_a91c0be7d634f62a4f1f2f95218ad09fd}{00041}}\ \mbox{\hyperlink{test_8cpp_a7fad1c1138ef9edd01cb840067591823}{TEST}}(Tests,\ negativeANDpositive)\ \{}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00042}00042\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00043}00043\ \ \ \ \ std::vector<int>\ t\ =\ \{\ -\/18,\ 30,\ -\/41,\ 1,\ -\/2\ \};}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00044}00044\ \ \ \ \ \mbox{\hyperlink{class_merge_sort_aa5217ebb6343779cc239c8d5ebe56ab1}{MergeSort::Sort}}(t);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00045}00045\ \ \ \ \ std::vector<int>\ expected\ =\ \{\ -\/41,\ -\/18,\ -\/2,\ 1,\ 30\ \};}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00046}00046\ \ \ \ \ ASSERT\_EQ(t,\ expected);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00047}00047\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00048}00048\ \}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00049}00049\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00050}\mbox{\hyperlink{test_8cpp_aa7e5d69abfbb17d7d2780f107b8745d4}{00050}}\ \mbox{\hyperlink{test_8cpp_a7fad1c1138ef9edd01cb840067591823}{TEST}}(Tests,\ empty)\ \{}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00051}00051\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00052}00052\ \ \ \ \ std::vector<int>\ t\ =\ \{\};}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00053}00053\ \ \ \ \ \mbox{\hyperlink{class_merge_sort_aa5217ebb6343779cc239c8d5ebe56ab1}{MergeSort::Sort}}(t);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00054}00054\ \ \ \ \ std::vector<int>\ expected\ =\ \{\};}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00055}00055\ \ \ \ \ ASSERT\_EQ(t,\ expected);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00056}00056\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00057}00057\ \}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00058}00058\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00059}\mbox{\hyperlink{test_8cpp_a5af932b43b7f25587f6a634d05b64e01}{00059}}\ \mbox{\hyperlink{test_8cpp_a7fad1c1138ef9edd01cb840067591823}{TEST}}(Tests,\ oneNumber)\ \{}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00060}00060\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00061}00061\ \ \ \ \ std::vector<int>\ t\ =\ \{\ 37\ \};}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00062}00062\ \ \ \ \ \mbox{\hyperlink{class_merge_sort_aa5217ebb6343779cc239c8d5ebe56ab1}{MergeSort::Sort}}(t);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00063}00063\ \ \ \ \ std::vector<int>\ expected\ =\ \{\ 37\ \};}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00064}00064\ \ \ \ \ ASSERT\_EQ(t,\ expected);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00065}00065\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00066}00066\ \}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00067}00067\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00068}\mbox{\hyperlink{test_8cpp_a3c883a8d9c62906acf816f78a018605c}{00068}}\ \mbox{\hyperlink{test_8cpp_a7fad1c1138ef9edd01cb840067591823}{TEST}}(Tests,\ duplicates)\ \{}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00069}00069\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00070}00070\ \ \ \ \ std::vector<int>\ t\ =\ \{\ 3,\ 6,\ 5,\ 5,\ 6\ ,3\ \};}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00071}00071\ \ \ \ \ \mbox{\hyperlink{class_merge_sort_aa5217ebb6343779cc239c8d5ebe56ab1}{MergeSort::Sort}}(t);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00072}00072\ \ \ \ \ std::vector<int>\ expected\ =\ \{\ 3,\ 3,\ 5,\ 5,\ 6\ ,6\ \};}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00073}00073\ \ \ \ \ ASSERT\_EQ(t,\ expected);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00074}00074\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00075}00075\ \}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00076}00076\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00077}\mbox{\hyperlink{test_8cpp_a70129b5b505f98e8df490609fac3cbf2}{00077}}\ \mbox{\hyperlink{test_8cpp_a7fad1c1138ef9edd01cb840067591823}{TEST}}(Tests,\ negativeDuplicates)\ \{}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00078}00078\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00079}00079\ \ \ \ \ std::vector<int>\ t\ =\ \{\ -\/10,\ -\/3,\ -\/5,\ -\/10,\ -\/5\ ,-\/3\ \};}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00080}00080\ \ \ \ \ \mbox{\hyperlink{class_merge_sort_aa5217ebb6343779cc239c8d5ebe56ab1}{MergeSort::Sort}}(t);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00081}00081\ \ \ \ \ std::vector<int>\ expected\ =\ \{\ -\/10,\ -\/10,\ -\/5,\ -\/5,\ -\/3,\ -\/3\ \};}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00082}00082\ \ \ \ \ ASSERT\_EQ(t,\ expected);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00083}00083\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00084}00084\ \}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00085}00085\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00086}\mbox{\hyperlink{test_8cpp_a65f1a741301295801a154b1d0e356403}{00086}}\ \mbox{\hyperlink{test_8cpp_a7fad1c1138ef9edd01cb840067591823}{TEST}}(Tests,\ twoNumbers)\ \{}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00087}00087\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00088}00088\ \ \ \ \ std::vector<int>\ t\ =\ \{\ 1,2\ \};}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00089}00089\ \ \ \ \ \mbox{\hyperlink{class_merge_sort_aa5217ebb6343779cc239c8d5ebe56ab1}{MergeSort::Sort}}(t);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00090}00090\ \ \ \ \ std::vector<int>\ expected\ =\ \{\ 1,2\ \};}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00091}00091\ \ \ \ \ ASSERT\_EQ(t,\ expected);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00092}00092\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00093}00093\ \}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00094}00094\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00095}\mbox{\hyperlink{test_8cpp_a3fcb877af0ceb317494cb0dbf8a59109}{00095}}\ \mbox{\hyperlink{test_8cpp_a7fad1c1138ef9edd01cb840067591823}{TEST}}(Tests,\ overHundred)\ \{}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00096}00096\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00097}00097\ \ \ \ \ std::vector<int>\ t(101);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00098}00098\ \ \ \ \ std::vector<int>\ expected(101);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00099}00099\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00100}00100\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ 101;\ i++)\ \{}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00101}00101\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00102}00102\ \ \ \ \ \ \ \ \ expected[i]\ =\ i\ *\ 2;}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00103}00103\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00104}00104\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00105}00105\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ 101;\ i++)\ \{}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00106}00106\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00107}00107\ \ \ \ \ \ \ \ \ t[i]\ =\ i\ *\ 2;}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00108}00108\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00109}00109\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00110}00110\ \ \ \ \ t[0]\ =\ 2;}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00111}00111\ \ \ \ \ t[1]\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00112}00112\ \ \ \ \ \mbox{\hyperlink{class_merge_sort_aa5217ebb6343779cc239c8d5ebe56ab1}{MergeSort::Sort}}(t);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00113}00113\ \ \ \ \ ASSERT\_EQ(t,\ expected);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00114}00114\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00115}00115\ \}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00116}00116\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00117}\mbox{\hyperlink{test_8cpp_ae52570a5f663fd9f53d252a213d9c858}{00117}}\ \mbox{\hyperlink{test_8cpp_a7fad1c1138ef9edd01cb840067591823}{TEST}}(Tests,\ allTypesHundred)\ \{}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00118}00118\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00119}00119\ \ \ \ \ std::vector<int>\ t(201);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00120}00120\ \ \ \ \ std::vector<int>\ expected(201);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00121}00121\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00122}00122\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ -\/100;\ i\ <\ 101;\ i++)\ \{}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00123}00123\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00124}00124\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ index\ =\ i\ +\ 100;}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00125}00125\ \ \ \ \ \ \ \ \ expected[index]\ =\ i\ *\ 2;}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00126}00126\ \ \ \ \ \ \ \ \ t[index]\ =\ i\ *\ 2;}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00127}00127\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00128}00128\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00129}00129\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00130}00130\ \ \ \ \ t[20]\ =\ 16;}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00131}00131\ \ \ \ \ expected[20]\ =\ 16;}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00132}00132\ \ \ \ \ t[20]\ =\ 6;}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00133}00133\ \ \ \ \ expected[20]\ =\ 6;}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00134}00134\ \ \ \ \ std::sort(expected.begin(),\ expected.end());}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00135}00135\ \ \ \ \ \mbox{\hyperlink{class_merge_sort_aa5217ebb6343779cc239c8d5ebe56ab1}{MergeSort::Sort}}(t);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00136}00136\ \ \ \ \ ASSERT\_EQ(t,\ expected);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00137}00137\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00138}00138\ \}}
+
+\end{DoxyCode}

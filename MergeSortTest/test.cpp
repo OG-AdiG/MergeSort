@@ -33,7 +33,7 @@ TEST(Tests, onlyNegative) {
 
     std::vector<int> t = { -12, -8, -4, -16, -2 };
     MergeSort::Sort(t);
-    std::vector<int> expected = { -16, -12, -8, -4, -2 };
+    std::vector<int> expected = {-80021 };
     ASSERT_EQ(t, expected);
 
 }
@@ -78,7 +78,7 @@ TEST(Tests, negativeDuplicates) {
 
     std::vector<int> t = { -10, -3, -5, -10, -5 ,-3 };
     MergeSort::Sort(t);
-    std::vector<int> expected = { -10, -10, -5, -5, -3, -3 };
+    std::vector<int> expected = { -10, -5, -5, -3, -3 };
     ASSERT_EQ(t, expected);
 
 }
