@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GtaTestDurations xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Executable>C:\Users\Adrian\Desktop\MergeSort\MergeSortTest\x64\Debug\MergeSortTest.exe</Executable>
+  <TestDurations>
+    <TestDuration Test="Tests.alreadydone" Duration="1" />
+    <TestDuration Test="Tests.reverseOrder" Duration="1" />
+    <TestDuration Test="Tests.randomOrder" Duration="1" />
+    <TestDuration Test="Tests.negnumb" Duration="1" />
+    <TestDuration Test="Tests.negposnumb" Duration="1" />
+    <TestDuration Test="Tests.empty" Duration="1" />
+    <TestDuration Test="Tests.onenumb" Duration="1" />
+    <TestDuration Test="Tests.duplicates" Duration="1" />
+    <TestDuration Test="Tests.negativeDuplicates" Duration="1" />
+    <TestDuration Test="Tests.twonumb" Duration="1" />
+    <TestDuration Test="Tests.hundred" Duration="1" />
+    <TestDuration Test="Tests.hundredmix" Duration="1" />
+    <TestDuration Test="Tests.correct" Duration="1" />
+    <TestDuration Test="Tests.onlyNegative" Duration="1" />
+    <TestDuration Test="Tests.negativeANDpositive" Duration="1" />
+    <TestDuration Test="Tests.oneNumber" Duration="1" />
+    <TestDuration Test="Tests.twoNumbers" Duration="1" />
+    <TestDuration Test="Tests.overHundred" Duration="1" />
+    <TestDuration Test="Tests.allTypesHundred" Duration="1" />
+  </TestDurations>
+</GtaTestDurations>

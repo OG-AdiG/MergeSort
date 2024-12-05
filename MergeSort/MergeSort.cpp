@@ -1,7 +1,5 @@
 ﻿#include "MergeSort.h"
 
-using namespace std;
-
 void MergeSort::Sort(std::vector<int>& tab) {
 
     if (tab.size() <= 1) return; 

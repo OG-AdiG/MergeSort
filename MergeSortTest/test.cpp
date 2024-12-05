@@ -1,8 +1,8 @@
-#include "../MergeSort/MergeSort.cpp"
-#include "../MergeSort/MergeSort.h"
+﻿#include "C:/Users/Adrian/Desktop/MergeSort/MergeSort/MergeSort.cpp"
+#include "C:/Users/Adrian/Desktop/MergeSort/MergeSort/MergeSort.h"
 #include <gtest/gtest.h>
 
-TEST(Tests, good) {
+TEST(Tests, correct) {
 
     std::vector<int> t = { 1, 2, 3, 4, 5 };
     MergeSort::Sort(t);
@@ -13,9 +13,9 @@ TEST(Tests, good) {
 
 TEST(Tests, reverseOrder) {
 
-    std::vector<int> t = { 10, 6, 5, 2, 1 };
+    std::vector<int> t = { 10, 9, 8, 7, 6 };
     MergeSort::Sort(t);
-    std::vector<int> expected = { 1, 2, 5, 6, 10 };
+    std::vector<int> expected = { 6, 7, 8, 9, 10 };
     ASSERT_EQ(t, expected);
 
 }
@@ -29,7 +29,7 @@ TEST(Tests, randomOrder) {
 
 }
 
-TEST(Tests, negativeOrder) {
+TEST(Tests, onlyNegative) {
 
     std::vector<int> t = { -12, -8, -4, -16, -2 };
     MergeSort::Sort(t);
@@ -38,11 +38,11 @@ TEST(Tests, negativeOrder) {
 
 }
 
-TEST(Tests, negativepositiveOrder) {
+TEST(Tests, negativeANDpositive) {
 
-    std::vector<int> t = { -53, 20, -14, 5, 2 };
+    std::vector<int> t = { -18, 30, -41, 1, -2 };
     MergeSort::Sort(t);
-    std::vector<int> expected = { -53, -14, 2, 5, 20 };
+    std::vector<int> expected = { -41, -18, -2, 1, 30 };
     ASSERT_EQ(t, expected);
 
 }
@@ -56,34 +56,34 @@ TEST(Tests, empty) {
 
 }
 
-TEST(Tests, onenumb) {
+TEST(Tests, oneNumber) {
 
-    std::vector<int> t = { 34 };
+    std::vector<int> t = { 37 };
     MergeSort::Sort(t);
-    std::vector<int> expected = { 34 };
+    std::vector<int> expected = { 37 };
     ASSERT_EQ(t, expected);
 
 }
 
 TEST(Tests, duplicates) {
 
-    std::vector<int> t = { 2, 1, 3, 8, 1 ,8 };
+    std::vector<int> t = { 3, 6, 5, 5, 6 ,3 };
     MergeSort::Sort(t);
-    std::vector<int> expected = { 1, 1, 3, 3, 6 ,6 };
+    std::vector<int> expected = { 3, 3, 5, 5, 6 ,6 };
     ASSERT_EQ(t, expected);
 
 }
 
 TEST(Tests, negativeDuplicates) {
 
-    std::vector<int> t = { -2, -1, -2, -8, -1 ,-8 };
+    std::vector<int> t = { -10, -3, -5, -10, -5 ,-3 };
     MergeSort::Sort(t);
-    std::vector<int> expected = { -8, -8, -2, -2, -1, -1 };
+    std::vector<int> expected = { -10, -10, -5, -5, -3, -3 };
     ASSERT_EQ(t, expected);
 
 }
 
-TEST(Tests, twonumb) {
+TEST(Tests, twoNumbers) {
 
     std::vector<int> t = { 1,2 };
     MergeSort::Sort(t);
@@ -92,7 +92,7 @@ TEST(Tests, twonumb) {
 
 }
 
-TEST(Tests, hundred) {
+TEST(Tests, overHundred) {
 
     std::vector<int> t(101);
     std::vector<int> expected(101);
@@ -100,13 +100,11 @@ TEST(Tests, hundred) {
     for (int i = 0; i < 101; i++) {
 
         expected[i] = i * 2;
-
     }
 
     for (int i = 0; i < 101; i++) {
 
         t[i] = i * 2;
-
     }
 
     t[0] = 2;
@@ -116,7 +114,7 @@ TEST(Tests, hundred) {
 
 }
 
-TEST(Tests, hundredmix) {
+TEST(Tests, allTypesHundred) {
 
     std::vector<int> t(201);
     std::vector<int> expected(201);
@@ -126,6 +124,7 @@ TEST(Tests, hundredmix) {
         int index = i + 100;
         expected[index] = i * 2;
         t[index] = i * 2;
+
     }
 
     t[20] = 16;
